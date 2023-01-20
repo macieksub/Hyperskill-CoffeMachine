@@ -25,13 +25,6 @@ class CoffeMachine(
             State.BUY -> buy(input)
             State.NULL -> action(input)
         }
-        // state = when (input) {
-        //     "buy" -> State.BUY
-        //     "fill" -> State.FILL
-        //     "take" -> State.TAKE
-        //     "remaining" -> State.REMAINING
-            // else -> State.NULL
-        // }
     }
     fun action(input: String) {
         state = when (input) {
